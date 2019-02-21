@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sudut"
+    android:background="@android:color/black"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/tv_judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MENU SUDUT"
+        android:textColor="#CD5C5C"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:layout_marginTop="80sp"
+        />
+
+    <EditText
+        android:id="@+id/x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Angka 1"
+        android:layout_below="@id/tv_judul"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="#CD5C5C"
+        android:textColor="#CD5C5C"
+        android:layout_marginTop="40sp"
+        android:inputType="number"
+        />
+
+    <Button
+        android:id="@+id/btn_sin"
+        android:text="SIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#CD5C5C"
+        android:layout_marginLeft="50sp"
+        android:layout_marginTop="30sp"
+        android:layout_below="@id/x"
+
+        />
+
+    <Button
+        android:id="@+id/btn_cos"
+        android:text="COS"
+        android:layout_marginLeft="10sp"
+        android:layout_toRightOf="@id/btn_sin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#CD5C5C"
+        android:layout_marginTop="30sp"
+        android:layout_below="@id/x"
+        />
+    <Button
+        android:id="@+id/btn_tan"
+        android:text="TAN"
+        android:layout_toRightOf="@id/btn_cos"
+        android:layout_marginTop="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:background="#CD5C5C"
+        android:layout_below="@id/x"
+        />
+
+    <TextView
+        android:id="@+id/tv_sudut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        android:layout_below="@id/btn_cos"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:layout_marginTop="30sp"
+        android:textColor="#CD5C5C"
+        />
+
+</RelativeLayout>
